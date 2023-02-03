@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/*
+/*O
  * [문제 27]콘솔에서 값을 입력받고 메서드를 호출해서 프로그램을 구현하시오.
              (BufferedReader을 이용)
 (1)계산방법

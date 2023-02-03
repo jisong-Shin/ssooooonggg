@@ -1,5 +1,10 @@
 package step00_과제3;
-/*
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/*O
  * [문제30] 아래와 같이 12달의 날수를 배열를 만들어 기억시킨후 
 원하는 month을 입력받아 그 달의 날수를 출력하시오
 
@@ -13,8 +18,17 @@ package step00_과제3;
  */
 public class work30 {
 
-	public static void main(String[] args) {
-
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		int [] month={31,28,31,30,31,30,31,31,30,31,30,31};
+	
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.print("원하는 month을 입력하시오 : ");
+		int m=Integer.parseInt(br.readLine());
+		
+		int i=0;
+		System.out.println(m+"월은 "+month[i]+"일 입니다.");
+		month[i]=Integer.parseInt(br.readLine());
 	}
 
 }

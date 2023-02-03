@@ -1,5 +1,5 @@
 package step00_과제3;
-/*
+/*O
  * [문제 38] 다음과 같은 결과가 나오도록 수정하시오
          (단, main()안의 내용수정과 새로운 Method추가하지마시오)
 
@@ -43,7 +43,8 @@ public class Test38 {
   
  */
 
-class Parent{
+class Parent
+{
 	String name;
 	public Parent(){	
 		System.out.println("###인적사항###");
@@ -61,22 +62,22 @@ class Child extends Parent
 	float tall;
 	
 	public Child(String name, int age, float tall){
+		super();
 		super.name=name;
 		this.age=age;
-		this.tall=tall;
+		this.tall=tall;		
 
 	}
-	@Override
 	public void printView(){
+		System.out.println("이름 : " + name);
 		System.out.println("나이 : " + age);
 		System.out.println("신장 : " + tall);
 	}
 }
-public class work38 {
-
-		public static void main(String[] args) {
-			new Child("민들래", 23, 165.3f).printView();
-
+public class Test38 {
+	public static void main(String[] args) {
+		new Child("민들래", 23, 165.3f).printView();
 	}
-
 }
+ 
+

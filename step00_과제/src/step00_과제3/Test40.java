@@ -1,5 +1,5 @@
 package step00_과제3;
-/*
+/* O
  * [문제 40 다음 프로그램을 완성하시오
 (1)클래스명: Entry
    -word:String 
@@ -27,9 +27,51 @@ package step00_과제3;
 시기 : 1991년
   
  */
-public class work40 {
+
+class Entry {
+	private String word;
+	private void Entry() {
+		System.out.println("***약어사전***");
+	}
+	public void Entry(String word) {
+		this.Entry();
+		this.word=word;
+	}
+	public void writeView() {
+		System.out.println("약어 : "+word);
+	}
+}
+
+class SubEntry extends Entry {
+	private String definition;
+	private int year;
+	
+	private SubEntry() {
+		
+	}
+	public void SubEntry(String word) {
+		super.Entry(word);
+	}
+	public SubEntry(String word, String definition, int year) {
+		this.SubEntry(word);
+		this.definition=definition;
+		this.year=year;
+		
+		
+		return;
+	}
+	public void printView() {
+		System.out.println("원어 : "+definition);
+		System.out.println("시기 : "+year);
+	}
+	
+}
+public class Test40 {
 
 	public static void main(String[] args) {
+		SubEntry ob=new SubEntry("OOP","Object Oriented Programming", 1991);
+	    ob.writeView();
+	    ob.printView();
 
 	}
 

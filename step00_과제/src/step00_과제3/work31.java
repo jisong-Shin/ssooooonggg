@@ -30,26 +30,27 @@ class Test31 {
 		System.out.println("[출력화면]");
 	}
 	
-public Test31(double base, double height) {
+	public Test31(double base, double height) {
 		super();
 		this.base = base;
 		this.height = height;
 	}
 
-public double getArea() {
-	return base*height/2;
+	public double getArea() {
+		return base*height/2.0;
 }
-public double getHypotenuse()  {
-	return Math.sqrt((base*base)+(height*height));
-}
-
-public double getPerimeter() {
-	return base+height+getHypotenuse();
+	public double getHypotenuse()  {
+		return Math.sqrt((base*base)+(height*height));
 }
 
-	public static void main(String[] args) {
+	public double getPerimeter() {
+		return base+height+getHypotenuse();
+}
+
+	public void main(String[] args) {
 		Test31 ob=new Test31();
 		
+		ob.getArea();
 		System.out.println("삼각형의 넓이 :" + ob.getArea());
 		System.out.println("빗변길이 :" + ob.getHypotenuse());
 		System.out.println("둘레길이 :" + ob.getPerimeter());

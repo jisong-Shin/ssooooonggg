@@ -17,12 +17,12 @@ public class work19 {
 
 	public static void main(String[] args) {
 		
-		int i, a;
-		for(int i=0; i<=j; i++)
-			for(int a=0; a<=2; a++)
+		int i, j;
+		for(int i=0; i<=2; i++) {
+		}for(int j=0; j<=2; j++) {
 		
-		System.out.println("Korea");
+		System.out.println("Korea"+"\t"+i+"\t");
 		
 	}
 
-}
+}}

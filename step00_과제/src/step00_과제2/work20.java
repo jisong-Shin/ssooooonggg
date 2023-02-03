@@ -22,7 +22,7 @@ public class work20 {
 		System.out.print("y값을 입력하시오 : ");
 		b=Integer.parseInt(br.readLine());
 		
-		for(int i=0; b<=1000; a*=b) 
+		for(int i=a; i<=1000; a*=b) 
 			System.out.println(a+"의 "+b+"승은 "+i+"입니다");
 		return;
 

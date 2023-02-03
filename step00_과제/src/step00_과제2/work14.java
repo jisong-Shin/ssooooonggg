@@ -23,18 +23,25 @@ import java.util.Random;
 public class work14 {
 
 	public static void main(String[] args) {
-		int[][] num=new int[9][];
-		int cnt=0;
+	
+		Random rd=new Random();
 		
-		do {
-		++cnt;
-		num=int(Math.random()*101+0);
-		System.out.println(num+" /t");
-		}
-		while(cnt<50);
+		int N;
 		
-		System.out.println();
+		for(int i = 0; i<100; i++ ) {
+			System.out.print(rd.nextInt()+1);
+			}
+	}}	
+		
+//		int[] num=new int[50];
+//		int cnt=0;
+//		do {
+//		++cnt;
+//		num[cnt]=(int)(Math.random()*100+1);
+//		System.out.print(num+" /t");
+//		}
+//		while(cnt<50);
+//
+//	}
 
-	}
 
-}

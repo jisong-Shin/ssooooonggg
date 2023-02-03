@@ -59,11 +59,11 @@ class Bookshop {
 		}
 		
 	public void setBook(String bname, String author, int price) {
-		bname=n;
-		author=a;
-		price=p;
-	}
-		
+		this.bname = bname;
+		this.author = author;
+		this.price = price;
+		this.viewBook();
+	}	
 		
 	public void viewBook() {
 		System.out.println("책이름 : "+getBname()+"\n"
@@ -75,8 +75,13 @@ class Bookshop {
 	public static void main(String[] args) {
 		Bookshop bk=new Bookshop();
 	    bk.setBook("자바완성", "황완성", 25000);
-	    
 	    bk.viewBook();
+	    
+	    Bookshop bk1=new Bookshop();
+	    bk1.setBname("JSP잡기");
+	    bk1.setAuthor("송JP");
+	    bk1.setPrice(3500);
+	    bk1.viewBook();
 	}
 
 }
