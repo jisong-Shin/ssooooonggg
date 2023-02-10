@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폴라로이드 사진 효과</title>
+<style type="text/css">
+	body{ margin: 25px; }
+	div.title{
+		width: 300px;
+		text-align: center;
+	}
+	img{
+	width:100%;
+	height: 230px;
+	}
+	div.polaroid{
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	box-shadow: 0px 5px 8px 0px lightgray, 0px 5px 16px 0px rgba(0,0,0,0.3);
+	/* x-position y-position bllur spread color , ( 불투명 조절가능  ) */   
+	
+	}
+	div.container{
+	text-align: center;
+	padding: 5px;
+	}
+</style>
+</head>
+<body>
+	<div class="title">
+		<h3>랜선으로 만나는 명화</h3>
+	</div>
+	<div class="polaroid">
+		<img src="image/pic1.jpg" alt="노름꾼" >
+		<div class="container">
+			<p>카드 놀이 하는 사람들</p>
+		</div>
+		<br>
+		<div class="polaroid">
+		<img src="image/pic2.jpg" alt="로드뷰" >
+		<div class="container">
+			<p>길가의 집</p>
+		</div>
+		
+	</div>
+</body>
+</html>

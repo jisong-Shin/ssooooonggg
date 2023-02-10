@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<script type="text/javascript">
+	var canvas=document.getElementById("cv");
+	var ctx=canvas.getContext("2d");
+	
+	var grd=ctx.createLinearGradient(0,0,250,0); // x1, y1, x2, y2
+	grd.addColorStop(0,"red");
+	grd.addColorStop("0.3","magenta");
+	grd.addColorStop("0.5","cyan");
+	grd.addColorStop("0.7","yellow");
+	grd.addColorStop("0.9","green");
+	grd.addColorStop(1,"orange");
+	
+	ctx.fillStyle=grd;
+	ctx.font="25px Broadway";
+	ctx.fillText("Have a nice Friday~~~!!!",30, 55);
+</script>
+<body>
+ 	<canvas id="cv" width="300px" height="400px"></canvas>
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<fieldset>
+	<legend>회원가입</legend>
+	<table>
+	<form>
+	<tr>
+		<td>아이디</td> 
+		<td><input type="text" id="id" placeholder="아이디를 입력하시오" required="required"></td>
+	</tr>
+	<tr>
+		<td>비밀번호</td> 
+		<td><input type="text" id="pw" placeholder="비밀번호를 입력하시오" required="required"></td>
+	</tr>
+	<tr>
+		<td>비밀번호 재확인</td> 
+		<td><input type="text" id="ppw" placeholder="비밀번호를 재입력하십시오" required="required"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><br></td>
+	</tr>
+	<tr>
+		<td>이름</td> <td><input type="text" id="name"></td>
+	</tr>
+	<tr>
+	<td>성별</td> 
+		<td>
+			<input type="radio" id="gender" value="man">남자 &nbsp;
+			<input type="radio" id="gender" value="woman">여자
+		</td>
+	</tr>
+	<tr>
+		<td>생일</td> <td><input type="date" name="date"></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<input type="text" id="email" placeholder="본인확인(이메일)" size="30"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><br></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<select>
+			<optgroup label="번호분류">
+				<option>+82</option>
+				<option>+95</option>
+				<option>+61</option></optgroup>
+		</select>
+			<input type="text" id="phone" size="24">
+			<input type="submit" value="인증" id="auth">    <!--submit과 button의 차이  -->
+		</td>
+	</tr>	
+	<tr>
+	 <td colspan="2"><input type="text" id="phone" placeholder="인증번호" size="34">
+	 <input type="submit" value="확인" id="accept"></td>
+	</tr>
+	
+	
+	</table>
+	</form>
+	</fieldset>
+	
+
+
+</body>
+</html>

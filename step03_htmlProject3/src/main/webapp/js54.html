@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<canvas id="cv1" width="200" height="100"></canvas>
+	<canvas id="cv2" width="200" height="100"></canvas>
+	<canvas id="cv3" width="200" height="100"
+	 style="border: 1px solid #000"></canvas>
+
+<script type="text/javascript">
+	var c=document.getElementById("cv3");
+	var ctx=c.getContext("2d");
+	ctx.fillStyle="#ff0000";    /* 색 채움 */
+	ctx.fillRect(0,0,150,75); 
+	ctx.stroke();
+		
+	
+	var c=document.getElementById("cv2");
+	var ctx=c.getContext("2d");
+	ctx.moveTo(0,0); /* 시작좌표  */
+	ctx.lineTo(100,100); /* 종료좌표 */
+	ctx.stroke();
+	
+	var c=document.getElementById("cv1");
+	var ctx=c.getContext("2d");
+	
+	
+	ctx.strokeStyle="limegreen";
+	ctx.arc(95,50,40,0,5,false);
+	     /* x, y ,반지름, 시작각도, 종료각도, 회전방향 */
+	ctx.stroke();
+
+</script>
+</body>
+</html>
+

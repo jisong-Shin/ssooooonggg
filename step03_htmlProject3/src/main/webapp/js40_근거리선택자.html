@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<strong>머리말</strong>
+	<p id="me">
+		<span>가운데</span><a href="">링크</a>
+		<img src="image/mouse.png">
+	</p>
+	<button>꼬리말</button>
+	<hr>
+	
+	<script>
+		var me=document.getElementById("me");
+		document.write("topNode:"+me.ownerDocument.nodeName+"<br>");
+		/* Node.ownerDocument : 읽기전용 속성, 노드의 최상위 docu- 객체반환 => #docu-*/
+		
+		document.write("firstChild:"+me.firstChild.nodeName+"<br>");
+		/* 첫번째 자식 노드 */
+		document.write("lastChild:"+me.lastChild.nodeName+"<br>");
+		/* 마지막 자식 노드 */
+		document.write("부모노드:"+me.parentNode.nodeName+"<br>");
+		/* 부모 노드 */
+		document.write("형제노드:"+me.previousSibling.nodeName+"<br>");
+		/* 형제 노드 */
+		document.write("형제노드:"+me.nextSibling.nodeName+"<br>");
+		/* 형제 노드 */
+	</script>
+</body>
+</html>

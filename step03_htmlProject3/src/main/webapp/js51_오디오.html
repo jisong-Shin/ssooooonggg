@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>멀티미디어</title>
+<script type="text/javascript">
+	var ado;
+	function play() {
+		ado-document.getElementById("ado");
+		ado.play();
+	}
+	function pause() {
+		ado.pause();
+	}
+	function mute() {
+		ado.volume=0;
+	}
+	function unmute() {
+		ado.volume=1;
+	}
+	
+</script>
+</head>
+<body>
+	<div>
+	<audio id="ado" controls="controls">
+		<source src="resource/audio/welcome.mp3" type="audio/mp3">
+	</audio><br>
+	<button onclick="play()">재생</button>
+	<button onclick="pause()">일시정지</button>
+	<button onclick="mute()">음소거</button>
+	<button onclick="unmute()">음소거해제</button>
+	
+	</div>
+</body>
+</html>

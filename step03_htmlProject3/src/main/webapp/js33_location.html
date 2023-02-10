@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<form>
+		사용자명 : <input type="text" name="name">
+		전화번호 : <input type="text" name="phone">
+		<input type="button" onclick="process()" value="보내기">
+	
+	</form>
+<script>
+	function process(){
+		var name=frm.name.value;
+		var phone=frm.phone.value;
+/*	location.href  : 원하는 위치로 이동*/
+		location.href="win1.html"+name+"&"+phone;
+	}
+
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	ul {
+        background-color: rgb(53,94,169);
+        /* background-color:  #999 ; */
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+    li a{ color: white;
+    	 text-decoration: none;
+    	 padding: 13px;
+    }
+    
+    #a{ float:left; /* 요소를 인라인 속성으로 변경해버림. */
+    }
+    
+    li a, .dropbtn {
+        display: inline-block; /* 인라인+블록 속성 모두 지님 */
+      
+    }
+    li a:hover, .dropdown:hover .dropbtn {
+        /* background-color: red; */
+        background-color: #6799FF;
+     
+    }
+    li.dropdown {
+        display: inline-block;
+    }
+    li a.active, a.active:hover{
+        /* background-color: #4CAF50; */
+        background-color: #6799FF;
+        
+    }
+    .dropdown-content {
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 5px 15px 0px lightgray; 
+        z-index: 3;                           /* 겹치는 상황에 어느 위치에 우선순위 줄 것인가? 일반적으로는 auto  */
+        display: none;    					 /* 드롭다운 이전에는 컨텐츠가 보이지 않음 */
+        position: absolute; 				/* 드롭다운 선택 시 컨텐츠 안 움직임 */
+    }
+    .dropdown-content a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 8px;
+        
+    }
+    .dropdown-content a:hover {
+   		 background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }	
+	
+</style>
+</head>
+<body>
+	
+	<ul>
+		<li><a id="a" href="#home">Home</a>
+		<li><a id="a" href="#mail">메일</a>
+		<li><a id="a" href="#cafe">카페</a>
+		<li><a id="a" href="#blog">블로그</a></li>
+		
+		<li class="dropdown">
+			<a href="#shopping" class="dropbtn">쇼핑</a>
+			<div class="dropdown-content">
+				<a href="#">가전제품</a>
+				<a href="#">의류/악세사리</a>
+				<a href="#">가방/신발</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#news" class="dropbtn">뉴스</a>
+			<div class="dropdown-content">
+				 <a href="#">정치</a>
+				 <a href="#">사회/문화</a>
+				 <a href="#">연예</a>
+			</div>
+		</li>
+		
+		<li style="float:right">
+			<a class="active" href="#login">로그인</a>
+		</li>
+		
+		
+	</ul>
+</body>
+</html>

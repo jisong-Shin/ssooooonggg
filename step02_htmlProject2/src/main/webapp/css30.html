@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>블록과 인라인</title>
+<style>
+	span{
+	width: 100px;
+	height: 100px;
+	display: inline;   /* 인라인이 기본값 */
+						/* 인라인-블록은 속성값을 모두 사용한 블럭으로 처리함 */
+	}
+	#x{	background-color: skyblue;}
+	#y{	background-color: olive;}
+	#z{	background-color: pink;}
+</style>
+</head>
+<body>
+	웹 표준은 <span id="x">HTML</span> 구조,
+	<span id="y">CSS</span> 디자인, 
+	<span id="z">JavaScript</span> 동작이 있습니다.
+</body>
+</html>

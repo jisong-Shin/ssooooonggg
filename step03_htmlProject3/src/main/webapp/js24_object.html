@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	// 생성자 함수
+	function User(name, age) {
+	this.name=name;
+	this.age=age;
+	this.view=function() {
+		document.write('my name is '+this.name+"<br>");
+		document.write('my age is '+this.age+"<br>");
+	}
+}	
+	document.write(typeof User+"<br>");   // function(타입조회)
+	
+	// 인스턴스 생성
+	var ob1=new User('pororo', 23);
+	var ob2=new User('cron', 21);
+	document.write(typeof ob1+"<br>");    // object(타입조회)
+	ob1.view();
+	ob2.view();
+</script>
+</head>
+<body>
+
+</body>
+</html>

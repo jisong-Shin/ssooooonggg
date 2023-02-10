@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#shopping_cart{
+	width: 800px;
+	height:120px;
+	padding:20px;
+	border: 2px solid red;
+	}
+	img{
+	width: 100px;
+	height:100px;
+	 }
+	
+</style>
+<script type="text/javascript">
+	function drag(ev){
+		ev.dataTransfer.setData("text", ev.target.id);
+	}
+
+	function allowDrop(ev){
+		ev.preventDefault();
+	}
+	function drop(ev){
+		ev.preventDefault();
+		var data=ev.dataTransfer.getData("text");
+		ev.target.appendChild(document.getElementById(data));
+	}
+</script>
+</head>
+<body>
+
+<p> 원하는 상품을 카트에 담으세요 </p>
+<div id="shopping_cart" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<img id="img1" src="resource/image/back1.jpg" draggable="true" ondragstart="drag(event)">
+<img id="img2" src="resource/image/back2.jpg" draggable="true" ondragstart="drag(event)">
+<img id="img3" src="resource/image/back3.jpg" draggable="true" ondragstart="drag(event)">
+<img id="img4" src="resource/image/back4.jpg" draggable="true" ondragstart="drag(event)">
+<img id="img5" src="resource/image/back5.jpg" draggable="true" ondragstart="drag(event)">
+<img id="img6" src="resource/image/back6.jpg" draggable="true" ondragstart="drag(event)">
+
+
+</body>
+</html>

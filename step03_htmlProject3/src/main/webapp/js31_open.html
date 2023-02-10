@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var win;
+	window.onload=function() {
+		win=window.open('win1.html', '', 'width=300, height=200');
+		win.moveTo(1500,200);              // 해당 좌표에 윈도우 가져다 놓겠다는 뜻.
+	}
+
+	window.setInterval(function() {
+		win.moveBy(50,50);
+	}, 1500);
+		
+	window.setTimeout(function() {
+		win.close();
+	},5000);
+</script>
+</head>
+<body>
+
+</body>
+</html>

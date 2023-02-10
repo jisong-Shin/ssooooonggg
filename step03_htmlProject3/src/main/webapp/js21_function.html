@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function plusFuc() {
+		var a=parseInt(frm.a.value);
+		var b=parseInt(frm.b.value);
+		
+		if(isNaN(a) || isNaN(b)) {
+			document.write("입력된 값이 숫자가 아니에요!")
+			frm.a.value="";
+			frm.b.value="";
+			frm.a.focus();
+			return ;
+	} 
+		frm.rs.value=a+b;
+	}
+	function diviFuc() {
+		var a=parseInt(frm.a.value);
+		var b=parseInt(frm.b.value);
+		rs=a/b;
+		
+		if(isFinite(rs)==false) {
+			alert("0으로 나눌 수 없어요!")
+			frm.a.value="";
+			frm.b.value="";
+			frm.a.focus();
+			return ;
+	} 
+		frm.rs.value=a/b;
+}
+</script>
+</head>
+<body>
+<form name="frm">
+	A값 : <input type="text" size="7" name="a">&nbsp;&nbsp;&nbsp;
+	B값 : <input type="text" size="7" name="b">&nbsp;&nbsp;&nbsp;
+    결과 : <input type="text" size="7" name="rs"><br><br>
+    <input type="button" size="+" value="더하기" onclick="plusFuc()">
+    <input type="button" size="+" value="나누기" onclick="diviFuc()">
+    
+</form>
+
+</body>
+</html>

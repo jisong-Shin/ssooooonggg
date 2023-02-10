@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>멀티미디어 : 비디오</title>
+<script>
+	var v;
+	function btnPlay() {
+		v=document.getElementById("vdo");
+		v.play();
+	}
+	function btnPause() {
+		v=pause();
+	}
+	function btnStop() {
+		v=pause();
+		v.currentTime=0;
+	}
+	function btnMute() {
+		v.stop();
+	}
+	function btnRate1() {
+		v.playbackRate=2;
+	}
+	function btnRate2() {
+		v.playbackRate=2;
+	}
+	function btnPrev() {
+		v.currentTime-=5;
+	}
+	function btnNext() {
+		v.currentTime+=5;
+	}
+	function btnNormalSize() {
+		v.width=480;
+	}
+	function btnLargeSize() {
+		v.width=960;
+	}
+	function btnSmallSize() {
+		v.width=240;
+	}
+	
+</script>
+</head>
+<body>
+	<div>
+	<h3>호랑이 이야기</h3>
+	<video id="vdo" width="300" height="272px" controls="controls">
+		<source src="resource/video/gilgamesh.mp4" type="video/webm"/>
+	</video>
+	
+	<br><br>
+	<button onclick="btnPlay()">재생</button>
+	<button onclick="btnPause()">일시정지</button>
+	<button onclick="btnMute()">정지</button>
+	<button onclick="btnRate1()">등배속</button>
+	<button onclick="btnRate2()">2배속</button><br><br>
+	<button onclick="btnPrev()"><<</button>
+	<button onclick="btnNext()">>></button>
+	<button onclick="btnNormalSize()">등배화면</button>
+	<button onclick="btnLargeSize()">2배화면</button>
+	<button onclick="btnSmallSize()">1/2배화면</button>
+	
+	</div>
+</body>
+</html>

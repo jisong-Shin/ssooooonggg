@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ 	<canvas id="cv1" width="200px" height="100px" style="border: 2px solid olive"></canvas>
+ 	<canvas id="cv2" width="200px" height="100px"></canvas>
+ 	<canvas id="cv3" width="200px" height="100px"></canvas>
+ 	
+<script type="text/javascript">
+	var canvas=document.getElementById("cv3");
+	var ctx=canvas.getContext("2d");
+	
+	var grd=ctx.createLinearGradient(0,0,200,0); // x1, y1, x2, y2
+	grd.addColorStop(0,"white");
+	grd.addColorStop("0.3","magenta");
+	grd.addColorStop("0.5","cyan");
+	grd.addColorStop("0.7","yellow");
+	grd.addColorStop("0.9","green");
+	grd.addColorStop(1,"orange");
+	
+	ctx.fillStyle=grd;
+	ctx.fillRect(10,10,190,80);
+//---------------------------------------------------------------------------
+	var canvas=document.getElementById("cv2");
+	var ctx=canvas.getContext("2d");
+	
+	var grd=ctx.createLinearGradient(0,0,200,0); // x1, y1, x2, y2
+	grd.addColorStop(0,"white");
+	grd.addColorStop(1,"red");
+	
+	
+	ctx.fillStyle=grd;
+	ctx.fillRect(10,10,150,80);
+//---------------------------------------------------------------------------
+	var canvas=document.getElementById("cv1");
+	var ctx=canvas.getContext("2d");
+	
+	var grd=ctx.createLinearGradient(0,0,250,0); // x1, y1, x2, y2
+	grd.addColorStop(1,"green");                //실수값도 사용 가능
+	grd.addColorStop(0.4,"white");
+	
+	ctx.fillStyle=grd;
+	ctx.fillRect(10,10,150,80);
+	
+</script>
+</body>
+</html>
+

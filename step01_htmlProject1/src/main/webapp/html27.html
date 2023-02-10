@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="html01_h.html">
+	
+	<fieldset>
+	<legend> 개인 정보 입력 </legend>
+	<table>
+		<tr>
+			<td><label for="name"></label></td>
+			<td><input type="text" name="name" id="name" 
+			placeholder="이름을 입력하세요" required="required" autofocus="autofocus"></td>
+		</tr>
+		<tr>
+			<td><label for="email"></label></td>
+			<td><input type="email" name="email" id="email" 
+			placeholder="이메일을 입력하세요"></td>
+		
+		</tr>
+		<tr>
+			<td><label for="phone"></label></td>
+			<td><input type="text" name="phone" id="phone" pattern="[0-1]{3}-[0-9]{4}-[0-9]{4}" 
+			title="###=####=####" placeholder="전화번호를 입력하세요"></td>
+		</tr>
+		<tr>
+			<td><label for="photo"></label></td>
+			<td><input type="file" name="photo" id="photo" 
+			accept="image/jpg, image/gif"></td>
+		<!-- accept="image/jpg, image/gif, video/mp4, video/webm" -->
+		</tr>
+		
+	</table> 
+	<input type="submit" >
+	</fieldset> 
+
+	</form>
+</body>
+</html>

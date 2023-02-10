@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 문서 객체의 이벤트를 사용하여 이벤트 핸들러에 연결하는 방식 -->
+<script type="text/javascript">
+	window.onload=function(){
+		var btn=document.getElementById('btn1');
+		btn1.onclick=function(){
+			alert('클릭1');
+		//	btn1.onclick=null;   *핸들러를 제거하지 않으면 계속 동작
+		}
+	};
+</script>
+</head>
+<body>
+	<input type="button" id="btn1" value="클릭1">
+	<input type="button" id="btn2" value="클릭2" onclick="alert('클릭2')">
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가상클래스 선택자</title>
+<style type="text/css">
+	/* 가상클래스 선택자 */
+	
+	 /* first_letter : 첫번째 글자 */
+	p:first-letter{                       
+		font-size : 25px;
+		background-color: gray;
+		color: white;
+		font-weight: bold;
+	}
+	/* h1 태그의 앞 */
+	h1:before{                      
+		content : "☆";
+		color: skyblue;
+	}
+	/* h1 태그의 뒤 */
+	h1:after{                      
+		content : "★";
+		color: blue;
+	}
+
+
+</style>
+
+</head>
+<body>
+	<h1>오리온 초코파이</h1>
+	<p>더 커진만큼 더 맛있어진 초코파이情 </p>
+	
+	<h1>Orion ChocoPie</h1><p>The world best</p>
+	
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body> 
+<img id="bear" src="resource/image/bear.jpg" style="display:none">
+	<canvas id="cv" width="800px" height="600px"></canvas>
+<script>
+	var canvas=document.getElementById("cv");
+	var ctx=canvas.getContext("2d");
+	
+	var image=document.getElementById("bear");
+	image.addEventListener("load", ()=>{
+	ctx.drawImage(image,10,10,260,200);
+	});
+	
+	ctx.font="40px Britannic Black"
+	
+	ctx.fillStyle="rgb(180,112,149)";
+	ctx.fillText("Welcome To My Page", 280, 50);
+	ctx.strokeStyle="rgb(190,150,30)";
+	ctx.strokeText("Happy Bear Couple", 280,200);
+</script>
+</body>
+</html>
+

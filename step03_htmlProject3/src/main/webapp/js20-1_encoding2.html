@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a='http://www.naver.com/webtoon? str=자바스크립트';
+	var b=encodeURI(a);
+	var c=encodeURIComponent(a);
+	
+	document.write('<p>URI<br>'+b+'<br><p>');
+	document.write('<p>encodeURI<br>'+b+'<p>');
+	document.write('<p>decodeURI<br>'+decodeURI(b)+'<p>');
+
+	document.write('<p>encodeURIComponent<br>'+c+'<p>');
+	document.write('<p>decodeURIComponent<br>'+decodeURIComponent(c)+'<p>');
+</script>
+</body>
+</html>

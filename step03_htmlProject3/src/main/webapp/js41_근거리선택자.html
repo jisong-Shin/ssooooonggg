@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<ul id="cafe">
+		<li>아메리카노</li>
+		<li>카페라떼</li>
+		<li>콜드브루</li>
+	</ul>
+	<hr>
+	<script type="text/javascript">
+		var tea=document.getElementById("cafe");
+		var child=cafe.childNodes;
+		
+		for(var i=0; i<child.length; i++){
+		//	document.write(child[i].nodeName+"<br>");
+			if(child[i].nodeName=="LI")
+				document.write(i+"번째 데이터 : "
+						+child[i].firstChild.nodeValue+"<br>");
+		
+		}
+	
+	</script>
+</body>
+</html>

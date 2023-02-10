@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON 객체</title>
+<script>
+	function init(){
+		var emp=[{"name" : "kim", "age" : 20},
+				 {"name" : "lee", "age" : 30},
+			     {"name" : "park", "age" : 40}
+		];
+		var msg="";
+		msg +="이름 : "+emp[0].name+"<br>나이 : "+emp[0].age+"<br>";
+		msg +="이름 : "+emp[1].name+"<br>나이 : "+emp[1].age+"<br>";
+		msg +="이름 : "+emp[2].name+"<br>나이 : "+emp[2].age+"<br>";
+	document.getElementById("rs").innerHTML=msg;		
+	}
+</script>
+</head>
+<body onload="init()">
+	<h3>json 표기법</h3>
+	<div id="rs"></div>
+</body>
+</html>

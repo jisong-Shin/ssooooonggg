@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* 기본 설정 */
+*{
+	padding: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	list-style: none;
+}
+.container{
+	width: 1080px;
+	height: 100%;
+	padding: 0 20px;
+}
+section .container{
+	width: 100%;
+	border-top: 2px solid lightgray;
+}
+
+header{
+	width:100%;
+	height: 75px;
+	line-height: 75px;
+	color:  #65ca00;
+}
+header .logo{
+	float:left;
+}
+
+.sidemenu > li :hover {
+	color : #65ca00;
+	font-weight: bold;
+	margin : 0 10px;
+}
+
+header .sidemenu {
+	float: right;
+	font-weight: 700;
+}
+header .sidemenu li {
+	margin : 0 10px;
+}
+
+
+/*-nav---------------------------------------  */
+
+ul li{
+	list-style: none;
+}
+li{
+	float: left;
+}
+a{
+	width: 100%;
+	height: 100%;
+	color: inherit;
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+nav .leftmenu{
+	float:left;
+	width: 100%;
+	font-size: 19px;
+}
+
+nav .leftmenu > li {
+	width:auto;
+	padding: 0 20px;
+	height: 42px;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	
+}
+nav .leftmenu > li > .dropmenu{
+	visibility: hidden;
+	diplay: inline-block;
+	width: 100%;
+	position: absolute; 
+	top: 42px;
+	left:0;
+	font-size: 10px;
+	text-align: left;
+	box-shadow: 0 2px 2px lightgray;
+}
+nav .leftmenu > li:hover > .dropmenu{
+	visibility: visible;
+}
+
+nav .leftmenu>li> .dropmenu>span{
+	color: white;
+	background-color: #65ca00;
+	display : inline-block;
+	width: 100%;
+	font-weight: 200;
+	padding-left:20px;
+}
+nav .leftmenu>li> .dropmenu>span:hover{
+	font-weight: 700;
+}
+
+nav .leftmenu > li.active{
+	color: #65ca00;
+	border-bottom: 3px solid #65ca00;
+}
+
+nav li a{
+	 font-family: 고딕;
+	 font-size: 17px;
+	 font-weight: bold;	 
+}
+nav .leftmenu > li:hover{
+	border-bottom: 3px solid #65ca00; 
+	position: relative;
+	color:  #65ca00; 
+}
+
+.rightmenu li a{
+	color: #65ca00;
+	text-align: center;
+	width: 90px;
+	padding : 5px;
+	margin: 5px;
+	border: 2px solid #65ca00; 
+	border-radius: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	display: inline-block;	
+}
+
+.rightmenu{
+	position:fixed; top: 50px; right:200px;
+}
+
+
+body{
+	min-height: 100%;
+	position: relative;
+}
+.clear{
+	clear: both;
+}
+
+
+/* #section1--------------------------- */
+section{
+    width: 100%;
+    height: 720px;
+    padding: 42px 0;
+    background: #fafafa;
+}
+
+.top{
+	padding: 10px;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	margin: 10px;
+}
+
+footer .top span{
+	padding: 0 12px 0 0;
+	font-size: 15px;
+}
+
+footer .top span:hover{
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

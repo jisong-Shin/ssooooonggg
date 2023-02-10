@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var User=new Object();    //new object(); 생성자함수
+	// 변수+게터/세터 : 프로퍼티로 표현
+	User.name='pororo';
+	User.age=23;
+	User.view=function() {
+		document.write('my name is '+this.name+"<br>")
+		document.write('my age is '+this.age+"<br>")
+	}
+	document.write(typeof User+"<br>");   //object
+	User.view();
+</script>
+</head>
+<body>
+
+</body>
+</html>

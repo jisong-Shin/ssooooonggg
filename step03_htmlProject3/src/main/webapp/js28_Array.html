@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var fruits=new Array('Banana', 'Orange', 'Apple', 'Mango');
+	document.write(typeof fruits+"<br>");    //object
+	document.write("-------------------------------<br>");
+	
+	fruits.sort();   //원본데이터에 변경 발생
+	document.write(fruits);
+	document.write("<br>");
+	
+	fruits.reverse();   // 원본데이터 변경 
+	document.write(fruits);
+	document.write("<br>");
+	
+	document.write("과일 개수 : "+fruits.length+"<br>");
+	for(i=0; i<fruits.length; i++) {
+	document.write(fruits[i]+"<br>");
+	}
+	document.write(text);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

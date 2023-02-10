@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>정규표현식</title>
+<script type="text/javascript">
+	/* 정규표현식을 만드는 방법
+	 [ab] a나 b 둘중 하나
+	 [^ab] a와 b를 제외한 모든 문자
+	 \ 문자열 제어코드
+	 \-  - 기호 자체
+	 \d  숫자 \D 숫자가 아닌 것			
+	*/
+	function process() {
+			var date=document.getElementById("hire_date").value;
+			var pattern=new RegExp("^[0-9]{4}\-(0[1-9]|1[012]\-(0[1-9]|1[0-9]|2[0-9]|3[01]$");
+			if(pattern.test(date)) {
+				alert('정상');
+			}else{
+				alert('비정상');
+			}
+		}
+
+</script>
+</head>
+<body>
+	<span>입사연월일</span> <!-- 2023-02-10 -->
+	<input type="text" name="hire_date" id="hire_date">
+	<input type="button" value="commit" id="process()">
+</body>
+</html>

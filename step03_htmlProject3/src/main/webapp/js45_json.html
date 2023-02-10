@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON 객체</title>
+<!-- JavaScript Object Notation 데이터(키와 값의 쌍) 객체-->
+<script>
+	function init(){
+		var emp={"name" : "진달래",                  //JSON 표기법
+				"age" : "23",
+				"phone" : "010-111-1111",
+				"addr" : "역삼동"}
+		
+		var msg="";
+		msg +="이름 : "+emp.name+"<br>"
+			+"나이 : "+emp.age+"<br>"
+			+"전화 : "+emp['phone']+"<br>"
+			+"주소 : "+emp['addr']+"<br>";
+			
+	document.getElementById("rs").innerHTML=msg;		
+		
+	}
+
+</script>
+</head>
+<body onload="init()">
+	<h3>JSON 표기법</h3>
+	<div id="rs"></div>
+</body>
+</html>

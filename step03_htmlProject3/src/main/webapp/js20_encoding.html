@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function ex1() {
+		alert(encodeURI('가나다')+"\n"+decodeURI('%EA%B0%80%EB%82%98%EB%8B%A4'));
+	}
+	function ex2() {
+		var x=10, y=15;
+		alert(String(x)+String(y));
+	}
+	function ex3() {
+		var ob1=eval("var num=5+2"); //문자열로 만들어진 수식을 식으로 표현
+		var ob2=eval("({'a':1, 'b':2, 'c':3})")
+		
+		alert(num+"\n"+ob2.b);
+	}
+</script>
+</head>
+<body>
+<form name="frm">
+	<input type="button" onclick="ex1()" value="테스트1">&nbsp;&nbsp;&nbsp;
+	<input type="button" onclick="ex2()" value="테스트2">&nbsp;&nbsp;&nbsp;
+	<input type="button" onclick="ex3()" value="테스트3">&nbsp;&nbsp;&nbsp;
+</form>
+</body>
+</html>

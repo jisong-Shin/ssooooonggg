@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var kor, eng, sum=0;
+	 do{
+		kor=prompt("국어 점수를 입력하세요");
+		if(kor<0 || kor>100)
+			alert("0~100사이의 값을 입력하세요");
+	} while(kor<0 || kor>100); 
+	 
+	 do{
+		eng=prompt("영어 점수를 입력하세요");
+		if(eng<0 || eng>100)
+			alert("0~100사이의 값을 입력하세요");
+	} while(eng<0 || eng>100);
+
+	 sum=parseInt(kor)+parseInt(eng);
+	 document.write("합계 : "+sum+"점<br>");
+	 
+/* 	while(true){                                  //동작안됨-이 형식은 사용하지 않음
+		kor=prompt("국어 점수를 입력하세요");
+		if(kor<0 || kor>100) {
+			alert("0~100사이의 값을 입력하세요");
+		} else break;
+	} */
+</script>
+</head>
+<body>
+
+</body>
+</html>
