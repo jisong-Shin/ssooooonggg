@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+	<div>남은 글자수 
+	<h2>50</h2>
+	<textarea rows="20" cols="30"></textarea>
+	</div>
+	<script>
+$().ready(function(){
+	/* $('textarea').keyup(function(){
+		var inputLength=$(this).val().length;
+		var remain=50-inputLength;
+		
+		$('h2').html(remain);
+		if(remain>=0){
+			$('h2').css('color', 'limegreen');
+		}else{
+			$('h2').css('color', 'lightblue');
+		}
+	}) */;
+	$('textarea').keyup(function(){
+		var inputLength=$(this).val().length;
+		var remain=50-inputLength;
+		$('h2').html(remain);
+		if(remain>=0){
+			$('h2').css('color', 'limegreen');
+		}else{
+			$('textarea').text($(this).val() .substring(0,49));
+			alert("입력메시지는 50자를 초과할 수 없습니다.");
+		}
+	})	
+});
+
+ 
+ </script>
+</body>
+</html>

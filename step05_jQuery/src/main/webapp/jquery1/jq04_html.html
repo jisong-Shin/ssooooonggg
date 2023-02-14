@@ -1,0 +1,61 @@
+<!-- jquery로 동작 ============================================-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$().ready(function() {
+		$("#btn1").on('click', function(){
+			var str=$("#txt").val();
+			$("#view1").text(str);
+		});
+	});
+	$().ready(function() {
+		$("#btn2").on('click', function(){
+			var str=$('#txt').val();
+			$('#view2').html(str);
+		});
+	});
+</script>
+
+</head>
+<body>
+	<input type="text" id="txt" size=30 name="text">
+	<input type="button" value="출력1" id="btn1">
+	<input type="button" value="출력2" id="btn2">
+	<div id="view1"></div>
+	<div id="view2"></div>
+</body>
+</html> 
+
+<!-- html, js로 동작===============================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+	function process1() {
+		var ob=document.getElementById("txt").value();
+		document.getElementById("view1").innerText()=ob;
+	}
+	function process2() {
+		var ob=document.getElementById("txt").value();
+		document.getElementById("view2").innerHTML()=ob;
+	}
+</script>
+
+</head>
+<body>
+	<input type="text" id="txt" size=30 name="text">
+	<input type="button" value="출력1" onclick="process1()">
+	<input type="button" value="출력2" onclick="process2()">
+	<div id="view1"></div>
+	<div id="view2"></div>
+</body>
+</html> 
+// <span style="color:red">가나다</span>
+-->

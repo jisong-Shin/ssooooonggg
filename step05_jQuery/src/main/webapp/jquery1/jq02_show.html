@@ -1,0 +1,64 @@
+<!-- css로 동작  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<body>
+	 <button id="btn1">보이기</button>
+	 <button id="btn2">숨기기</button>
+
+	 <div>
+	 	<img src="../image/dog.png" id="img" style="visibility:hidden">  
+	 </div>
+	 
+	 <script>
+	 $().ready(function(){
+		 $('#btn1').click(function(){
+			$('#img').css('visibility', 'visible'); 
+		 });
+		 
+		 $('#btn2').click(function(){
+				$('#img').css('visibility', 'hidden');
+			 }); 
+		 
+		 
+	 });
+	 
+	 </script>
+</body>
+</html>
+
+<!--html로 동작
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<body>
+	 <button id="btn1">보이기</button>
+	 <button id="btn2">숨기기</button>
+
+	 <div>
+	 	<img src="../image/dog.png" id="img">  이미지 경로 주의!
+	 </div>
+	 
+	 <script>
+	/* show() / hide() */
+	 $().ready(function(){
+		 $('#btn1').click(function(){
+			$('#img').show(); 
+		 });
+		 
+		 $('#btn2').click(function(){
+				$('#img').hide(); 
+			 }); 
+		 
+		 
+	 });
+	 
+	 </script>
+</body>
+</html> -->

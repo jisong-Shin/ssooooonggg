@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.bold{
+	font-size:17px; 
+	font-weight:700;
+	color : limegreen;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$().ready(function(){
+	
+	$('div').mouseover(function(){
+		$(this).addClass('bold');
+	});
+	$('div').mouseout(function(){
+		$(this).removeClass('bold');
+	});
+});
+
+</script>
+</head>
+<body>
+	<div>강아지</div>
+	<div>고양이</div>
+	<div>코알라</div>
+	<div>원숭이</div>
+	<div>고릴라</div>
+</body>
+</html>

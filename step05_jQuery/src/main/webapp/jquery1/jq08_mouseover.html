@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$().ready(function(){
+	// mouseenter, mouseleave
+	/*
+	$('img')
+	.mouseenter(function(){
+		$(this).attr('src', '../image/americano.jpg');
+	}) // 쿼리를 바깥으로 뺄 경우 세미콜론 (;) 빼고 동작
+	.mouseleave(function(){
+		$(this).attr('src', '../image/cafelatte.jpg');
+ }); */
+ 
+   $('#d2')
+   .mouseenter(function(){
+		$(this).attr('src', '../image/americano.jpg');
+	})
+	.mouseleave(function(){
+		$(this).attr('src', '../image/cafelatte.jpg');
+	}); 
+
+	
+/* 
+ 	// mouseover, mouseout
+	$('img').mouseover(function(){
+		$(this).attr('src', '../image/americano.jpg');
+	});
+	$('img').mouseout(function(){
+		$(this).attr('src', '../image/cafelatte.jpg');
+	}); 
+*/
+	
+	
+	//mouseenter,mouseleave
+});
+
+</script>
+</head>
+<body>
+	<img src="../image/cafelatte.jpg">
+</body>
+</html>

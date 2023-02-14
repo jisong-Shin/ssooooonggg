@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.btnColor{color: hotpink;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+	<button>음악감상</button>
+	<button>영화감상</button>
+	<button>사진감상</button>
+	<button>종료하기</button>
+<script>
+/* $().ready(function(){
+	$('button').hover(function(){
+		$(this).addClass('btnColor');
+	}, function(){
+		$(this).removeClass('btnColor');
+	
+	});
+ }); */
+ // 문제. mouseover/ mouseout 사용하여 동작
+ $().ready(function(){
+	$('button').
+	mouseover(function(){
+	$(this).addClass('btnColor');
+	})
+	.mouseout(function(){
+	$(this).removeClass('btnColor');
+	});
+ });
+ 
+ </script>
+</body>
+</html>

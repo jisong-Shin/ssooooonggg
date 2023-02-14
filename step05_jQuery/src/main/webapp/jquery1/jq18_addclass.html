@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.ex1{color: hotpink;}
+	.ex2{color: olive;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+	<p>Hello JavaScript</p>
+	<button id="btn1">핑큐</button>
+	<button id="btn2">올리뷰</button>
+<script>
+$().ready(function(){
+	//문제. 버튼을 클릭할 때마다 <p>태그의 색상이 바뀌도록 작성해보세욤.
+	$('#btn1').click(function(){
+		$('p').addClass('ex1')
+		$('p').removeClass('ex2')
+		
+});
+	$('#btn2').click(function(){
+		$('p').addClass('ex2')
+		$('p').removeClass('ex1')
+});
+
+		
+});
+
+ 
+ </script>
+</body>
+</html>

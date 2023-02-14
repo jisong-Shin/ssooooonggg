@@ -1,0 +1,46 @@
+<!-- jquery로 동작 ============================================-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.container{
+	position : absolute;
+	top: 30px;
+	left: 100px;
+	height:200px;
+	width: 300px;
+	border: 1px solid red;
+	padding: 20px;
+	
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$().ready(function() {
+	/* 버튼 1을 눌렀습니다 css({'font', 'red', 'font-weight', 'bold', 'font-size', '20px'})
+	                  style="color:red" */
+	    $("#rs").text("왼쪽 메뉴를 선택해주세요");
+	    $("#rs").removeAttr('style');
+	   	$("#btn1").on('click', function(){
+	   		$("#rs").text("버튼 1을 눌렀습니다").css({'color':'red', 'font-weight':'bold', 'font-size':'20px'});
+	   		
+	 });
+	});
+	/* 버튼 2을 눌렀습니다 style="color:red" */
+	$().ready(function() {
+	   	$("#btn2").on('click', function(){
+	   		$("#rs").removeAttr('style'); //스타일속성을 제거함
+	   		$("#rs").text("버튼 2를 눌렀습니다").css({'color':'blue', 'font-weight':'bold', 'font-size':'20px'});
+	 });
+	});
+</script>
+</head>
+<body>
+	<a id="btn1" href="#">버튼1</a><br><br>
+	<a id="btn2" href="#">버튼2</a><br><br>
+	<div id="rs" class="container">	</div>	
+	
+</body>
+</html> 

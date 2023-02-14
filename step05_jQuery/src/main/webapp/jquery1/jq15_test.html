@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.container{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    height: 120px;
+    width: 350px;
+    border: 1px  dotted  black;
+    padding-left: 20px;
+    padding: 30px;
+}
+.login{
+    position: absolute;
+    top:24px;
+    left: 180px;
+    height: 40px;
+    width: 80px;
+    background-color:#47C83E;
+    border: 1px  solid  #47C83E;
+    font-size: 10px;
+    color:white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+input{
+    border: 0.5px  solid  #D5D5D5;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+
+$().ready(function(){
+	$('#id').focus(function(){
+		$(this).css('background-color', 'yellow');
+	});
+	$('#id').blur(function(){
+		$(this).css('background-color', '#fff');
+	});
+		
+	var emp={"id":"abcd",
+			 "pw":"1234",
+			 "name":"홍길동",
+			 "point":"1250"
+			};
+
+	$('#login').click(function(){
+		var i=$('#id').val();
+		var p=$('#pw').val();
+	
+		if(emp.id==i && emp.pw==p) {
+			$('#con').text(emp.name+"님 환영합니다! 현재 포인트는"+emp.point+"입니다^^").css('color', 'blue');
+		}else if(i=="" || p=="") {
+			$('#con').text("아이디와 비밀번호를 입력해주세요.").css('color', 'black');	
+			$('#id').focus();
+		}else {
+			$('#con').text("아이디 또는 비밀번호가 틀립니다.").css('color', 'red');	 	
+			$('#id').focus();	
+		}	
+	});
+ });
+ </script>
+</head>
+<body>
+<div id="result" class="container">
+	<label for="input">[로그인 화면]</label><br><br>
+	<input type="text" id="id" placeholder="아이디">
+	<span>아이디를 입력하세요</span><br>
+	<input type="text" id="pw" placeholder="비밀번호">
+	<span>비밀번호를 입력하세요</span><br>
+	<button id="login">Login</button><br><br>
+	<span id="con"></span>
+	
+
+</body>
+</html>

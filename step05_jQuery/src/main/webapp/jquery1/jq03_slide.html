@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script> 
+	$().ready(function(){
+		$('#btn1').click(function(){
+			$('#img').slideUp(1000);
+		});
+		$('#btn2').click(function(){
+			$('#img').slideDown(1000);
+		});
+		$('#btn3').click(function(){
+			$('#img').fadeIn(2000);
+		});
+		$('#btn4').click(function(){
+			$('#img').fadeOut(2000);
+		});
+		$('#btn5').click(function(){
+			$('#img').slideToggle(1000);
+		});
+		$('#btn6').click(function(){
+			$('#img').toggle(1000);
+		});
+		$('#btn7').click(function(){
+			$('#img').show(1500).fadeOut(1500).slideDown(1500);
+		});	
+		
+	});
+
+</script>
+</head>
+<body>
+<button id="btn1">slideUp</button>&nbsp;&nbsp;&nbsp;
+<button id="btn2">slideDown</button>&nbsp;&nbsp;&nbsp;
+<button id="btn3">fadeIn</button>&nbsp;&nbsp;&nbsp;
+<button id="btn4">fadeOut</button>&nbsp;&nbsp;&nbsp;
+<button id="btn5">slide Toggle</button>&nbsp;&nbsp;&nbsp;
+<button id="btn6">toggle</button>&nbsp;&nbsp;&nbsp;
+<button id="btn7">chaning</button>&nbsp;&nbsp;&nbsp;
+
+<p>이미지</p>
+	<img src="../image/dog.png" id="img">
+</body>
+</html>
