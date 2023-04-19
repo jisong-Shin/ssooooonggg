@@ -31,7 +31,7 @@
 
 ### 🚗 Connect
 <p>
-  <a href="https://blog.naver.com/ssooongg" target="_blank"><img src="https://img.shields.io/badge/Blog-83B81A?style=flat&logo=naver&logoColor=white" /></a>
+  <a href="https://blog.naver.com/" target="_blank"><img src="https://img.shields.io/badge/Blog-83B81A?style=flat&logo=naver&logoColor=white" /></a>
   <a href="mailto:ssooonggii@gmail.com" target="_blank"><img src="https://img.shields.io/badge/ssooonggii@gmail.com-EA4335?style=flat&logo=google&logoColor=white" /></a>
 </p>
 <br>
